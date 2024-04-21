@@ -1,0 +1,4 @@
+[console_scripts]
+controller = py_pkg.controller_node:main
+spawner = py_pkg.spawner_node:main
+

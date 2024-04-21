@@ -1,0 +1,8 @@
+{
+  "package_name": "turtle_interfaces",
+  "non_idl_tuples": [
+    "/home/moekatra22/catch_them_all_turtlesim/src/turtle_interfaces:msg/Turtle.msg",
+    "/home/moekatra22/catch_them_all_turtlesim/src/turtle_interfaces:msg/TurtleArray.msg",
+    "/home/moekatra22/catch_them_all_turtlesim/src/turtle_interfaces:srv/CatchTurtle.srv"
+  ]
+}
