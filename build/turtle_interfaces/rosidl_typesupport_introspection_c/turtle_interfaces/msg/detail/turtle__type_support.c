@@ -35,7 +35,7 @@ void turtle_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_
   turtle_interfaces__msg__Turtle__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember turtle_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember turtle_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_message_member_array[4] = {
   {
     "name",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -54,14 +54,14 @@ static rosidl_typesupport_introspection_c__MessageMember turtle_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "pose_x",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "x",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtle_interfaces__msg__Turtle, pose_x),  // bytes offset in struct
+    offsetof(turtle_interfaces__msg__Turtle, x),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -71,14 +71,31 @@ static rosidl_typesupport_introspection_c__MessageMember turtle_interfaces__msg_
     NULL  // resize(index) function pointer
   },
   {
-    "pose_y",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    "y",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtle_interfaces__msg__Turtle, pose_y),  // bytes offset in struct
+    offsetof(turtle_interfaces__msg__Turtle, y),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "theta",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(turtle_interfaces__msg__Turtle, theta),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -92,7 +109,7 @@ static rosidl_typesupport_introspection_c__MessageMember turtle_interfaces__msg_
 static const rosidl_typesupport_introspection_c__MessageMembers turtle_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_message_members = {
   "turtle_interfaces__msg",  // message namespace
   "Turtle",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(turtle_interfaces__msg__Turtle),
   turtle_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_message_member_array,  // message members
   turtle_interfaces__msg__Turtle__rosidl_typesupport_introspection_c__Turtle_init_function,  // function to initialize message memory (memory has to be allocated)

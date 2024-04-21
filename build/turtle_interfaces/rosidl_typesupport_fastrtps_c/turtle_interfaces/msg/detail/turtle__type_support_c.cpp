@@ -65,14 +65,19 @@ static bool _Turtle__cdr_serialize(
     cdr << str->data;
   }
 
-  // Field name: pose_x
+  // Field name: x
   {
-    cdr << ros_message->pose_x;
+    cdr << ros_message->x;
   }
 
-  // Field name: pose_y
+  // Field name: y
   {
-    cdr << ros_message->pose_y;
+    cdr << ros_message->y;
+  }
+
+  // Field name: theta
+  {
+    cdr << ros_message->theta;
   }
 
   return true;
@@ -103,14 +108,19 @@ static bool _Turtle__cdr_deserialize(
     }
   }
 
-  // Field name: pose_x
+  // Field name: x
   {
-    cdr >> ros_message->pose_x;
+    cdr >> ros_message->x;
   }
 
-  // Field name: pose_y
+  // Field name: y
   {
-    cdr >> ros_message->pose_y;
+    cdr >> ros_message->y;
+  }
+
+  // Field name: theta
+  {
+    cdr >> ros_message->theta;
   }
 
   return true;
@@ -134,15 +144,21 @@ size_t get_serialized_size_turtle_interfaces__msg__Turtle(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message->name.size + 1);
-  // field.name pose_x
+  // field.name x
   {
-    size_t item_size = sizeof(ros_message->pose_x);
+    size_t item_size = sizeof(ros_message->x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name pose_y
+  // field.name y
   {
-    size_t item_size = sizeof(ros_message->pose_y);
+    size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name theta
+  {
+    size_t item_size = sizeof(ros_message->theta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -187,21 +203,29 @@ size_t max_serialized_size_turtle_interfaces__msg__Turtle(
         1;
     }
   }
-  // member: pose_x
+  // member: x
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: pose_y
+  // member: y
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // member: theta
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -212,7 +236,7 @@ size_t max_serialized_size_turtle_interfaces__msg__Turtle(
     using DataType = turtle_interfaces__msg__Turtle;
     is_plain =
       (
-      offsetof(DataType, pose_y) +
+      offsetof(DataType, theta) +
       last_member_size
       ) == ret_val;
   }

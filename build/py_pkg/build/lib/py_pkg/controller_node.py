@@ -11,15 +11,12 @@ from functools import partial
 class HunterNode(Node):
     def __init__(self):
         super().__init__("controller")
-
-        self.target_x = 4.0
-        self.target_y = 8.0
-
+        self.turtle_to_catch_ = None
         self.pose_ = None
 
         #Subscribtions
         self.pose_subscriber_ = self.create_subscription(Pose, "turtle1/pose", self.callback_turtle_pose, 10)
-        # self.alive_list_ = self.create_subscription(TurtleArray, "alive_turtles", self.alive_turtles_callback, 10)
+        self.alive_turtles_subscriber_ = self.create_subscription(TurtleArray, "alive_turtles", self.callback_alive_turtles, 10)
 
         #Publishers
         self.cmd_vel_publisher_ = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
@@ -32,13 +29,18 @@ class HunterNode(Node):
 
     def callback_turtle_pose(self, msg):
         self.pose_ = msg
+    
+    def callback_alive_turtles(self, msg):
+        if len(msg.turtle_array) > 0:
+            self.turtle_to_catch_ = msg.turtle_array[0]
+
 
     def control_loop(self):
-        if self.pose_ == None:
+        if self.pose_ == None or self.turtle_to_catch_ == None:
             return
         
-        dist_x = self.target_x - self.pose_.x
-        dist_y = self.target_y - self.pose_.y
+        dist_x = self.turtle_to_catch_.x - self.pose_.x
+        dist_y = self.turtle_to_catch_.y - self.pose_.y
         distance = math.sqrt(dist_x **2 + dist_y **2)
 
         Kp_pose = 2

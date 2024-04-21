@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-import rclpy
-from rclpy.node import Node
-from turtlesim.srv import Spawn, Kill
-from turtle_interfaces.msg import Turtle, TurtleArray
-from turtle_interfaces.srv import CatchTurtle
+from functools import partial
 import random 
 import math
-from functools import partial
+import rclpy
+from rclpy.node import Node
+
+from turtlesim.srv import Spawn, Kill
+from turtle_interfaces.msg import Turtle, TurtleArray
 
 
 class SpawnerClientNode(Node):
@@ -15,6 +15,8 @@ class SpawnerClientNode(Node):
 
         self.turtle_name_prefix_ = "turtle"
         self.turtle_counter_ = 0
+        self.alive_turtles_ = []
+        self.alive_turtles_publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
         self.spawn_turtle_timer_ = self.create_timer(2.0, self.spawn_new_turtle)
 
         # self.client_spawn_ = self.create_client(Spawn, "spawn")
@@ -33,6 +35,11 @@ class SpawnerClientNode(Node):
         # self.client_kill_ = self.create_client(Kill, "kill")
 
         # self.alive_list = TurtleArray()
+
+    def publish_alive_turtles(self):
+        msg = TurtleArray()
+        msg.turtle_array = self.alive_turtles_
+        self.alive_turtles_publisher_.publish(msg)
 
     def spawn_new_turtle(self):
         self.turtle_counter_ += 1
@@ -59,6 +66,13 @@ class SpawnerClientNode(Node):
             response = future.result()
             if response.name != "":
                 self.get_logger().info(f'new turtle spawned with name: {response.name}')
+                new_turtle = Turtle()
+                new_turtle.name = response.name
+                new_turtle.x = x
+                new_turtle.y = y
+                new_turtle.theta = theta
+                self.alive_turtles_.append(new_turtle)
+                self.publish_alive_turtles()
         except Exception as e:
             self.get_logger().error("Service call failed %r" % (e,))
 

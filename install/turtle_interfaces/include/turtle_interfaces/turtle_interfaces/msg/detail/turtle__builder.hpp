@@ -21,15 +21,15 @@ namespace msg
 namespace builder
 {
 
-class Init_Turtle_pose_y
+class Init_Turtle_theta
 {
 public:
-  explicit Init_Turtle_pose_y(::turtle_interfaces::msg::Turtle & msg)
+  explicit Init_Turtle_theta(::turtle_interfaces::msg::Turtle & msg)
   : msg_(msg)
   {}
-  ::turtle_interfaces::msg::Turtle pose_y(::turtle_interfaces::msg::Turtle::_pose_y_type arg)
+  ::turtle_interfaces::msg::Turtle theta(::turtle_interfaces::msg::Turtle::_theta_type arg)
   {
-    msg_.pose_y = std::move(arg);
+    msg_.theta = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,16 +37,32 @@ private:
   ::turtle_interfaces::msg::Turtle msg_;
 };
 
-class Init_Turtle_pose_x
+class Init_Turtle_y
 {
 public:
-  explicit Init_Turtle_pose_x(::turtle_interfaces::msg::Turtle & msg)
+  explicit Init_Turtle_y(::turtle_interfaces::msg::Turtle & msg)
   : msg_(msg)
   {}
-  Init_Turtle_pose_y pose_x(::turtle_interfaces::msg::Turtle::_pose_x_type arg)
+  Init_Turtle_theta y(::turtle_interfaces::msg::Turtle::_y_type arg)
   {
-    msg_.pose_x = std::move(arg);
-    return Init_Turtle_pose_y(msg_);
+    msg_.y = std::move(arg);
+    return Init_Turtle_theta(msg_);
+  }
+
+private:
+  ::turtle_interfaces::msg::Turtle msg_;
+};
+
+class Init_Turtle_x
+{
+public:
+  explicit Init_Turtle_x(::turtle_interfaces::msg::Turtle & msg)
+  : msg_(msg)
+  {}
+  Init_Turtle_y x(::turtle_interfaces::msg::Turtle::_x_type arg)
+  {
+    msg_.x = std::move(arg);
+    return Init_Turtle_y(msg_);
   }
 
 private:
@@ -59,10 +75,10 @@ public:
   Init_Turtle_name()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_Turtle_pose_x name(::turtle_interfaces::msg::Turtle::_name_type arg)
+  Init_Turtle_x name(::turtle_interfaces::msg::Turtle::_name_type arg)
   {
     msg_.name = std::move(arg);
-    return Init_Turtle_pose_x(msg_);
+    return Init_Turtle_x(msg_);
   }
 
 private:

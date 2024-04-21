@@ -37,7 +37,7 @@ void Turtle_fini_function(void * message_memory)
   typed_message->~Turtle();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Turtle_message_member_array[3] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Turtle_message_member_array[4] = {
   {
     "name",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -56,14 +56,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Turtle_messag
     nullptr  // resize(index) function pointer
   },
   {
-    "pose_x",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    "x",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtle_interfaces::msg::Turtle, pose_x),  // bytes offset in struct
+    offsetof(turtle_interfaces::msg::Turtle, x),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -73,14 +73,31 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Turtle_messag
     nullptr  // resize(index) function pointer
   },
   {
-    "pose_y",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    "y",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtle_interfaces::msg::Turtle, pose_y),  // bytes offset in struct
+    offsetof(turtle_interfaces::msg::Turtle, y),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "theta",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(turtle_interfaces::msg::Turtle, theta),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -94,7 +111,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Turtle_messag
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Turtle_message_members = {
   "turtle_interfaces::msg",  // message namespace
   "Turtle",  // message name
-  3,  // number of fields
+  4,  // number of fields
   sizeof(turtle_interfaces::msg::Turtle),
   Turtle_message_member_array,  // message members
   Turtle_init_function,  // function to initialize message memory (memory has to be allocated)

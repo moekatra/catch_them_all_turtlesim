@@ -34,10 +34,12 @@ cdr_serialize(
 {
   // Member: name
   cdr << ros_message.name;
-  // Member: pose_x
-  cdr << ros_message.pose_x;
-  // Member: pose_y
-  cdr << ros_message.pose_y;
+  // Member: x
+  cdr << ros_message.x;
+  // Member: y
+  cdr << ros_message.y;
+  // Member: theta
+  cdr << ros_message.theta;
   return true;
 }
 
@@ -50,11 +52,14 @@ cdr_deserialize(
   // Member: name
   cdr >> ros_message.name;
 
-  // Member: pose_x
-  cdr >> ros_message.pose_x;
+  // Member: x
+  cdr >> ros_message.x;
 
-  // Member: pose_y
-  cdr >> ros_message.pose_y;
+  // Member: y
+  cdr >> ros_message.y;
+
+  // Member: theta
+  cdr >> ros_message.theta;
 
   return true;
 }
@@ -76,15 +81,21 @@ get_serialized_size(
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
     (ros_message.name.size() + 1);
-  // Member: pose_x
+  // Member: x
   {
-    size_t item_size = sizeof(ros_message.pose_x);
+    size_t item_size = sizeof(ros_message.x);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: pose_y
+  // Member: y
   {
-    size_t item_size = sizeof(ros_message.pose_y);
+    size_t item_size = sizeof(ros_message.y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: theta
+  {
+    size_t item_size = sizeof(ros_message.theta);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -125,22 +136,31 @@ max_serialized_size_Turtle(
     }
   }
 
-  // Member: pose_x
+  // Member: x
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: pose_y
+  // Member: y
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: theta
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -151,7 +171,7 @@ max_serialized_size_Turtle(
     using DataType = turtle_interfaces::msg::Turtle;
     is_plain =
       (
-      offsetof(DataType, pose_y) +
+      offsetof(DataType, theta) +
       last_member_size
       ) == ret_val;
   }

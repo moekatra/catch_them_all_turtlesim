@@ -58,20 +58,23 @@ class Turtle(metaclass=Metaclass_Turtle):
 
     __slots__ = [
         '_name',
-        '_pose_x',
-        '_pose_y',
+        '_x',
+        '_y',
+        '_theta',
     ]
 
     _fields_and_field_types = {
         'name': 'string',
-        'pose_x': 'float',
-        'pose_y': 'float',
+        'x': 'double',
+        'y': 'double',
+        'theta': 'double',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -79,8 +82,9 @@ class Turtle(metaclass=Metaclass_Turtle):
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.name = kwargs.get('name', str())
-        self.pose_x = kwargs.get('pose_x', float())
-        self.pose_y = kwargs.get('pose_y', float())
+        self.x = kwargs.get('x', float())
+        self.y = kwargs.get('y', float())
+        self.theta = kwargs.get('theta', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -113,9 +117,11 @@ class Turtle(metaclass=Metaclass_Turtle):
             return False
         if self.name != other.name:
             return False
-        if self.pose_x != other.pose_x:
+        if self.x != other.x:
             return False
-        if self.pose_y != other.pose_y:
+        if self.y != other.y:
+            return False
+        if self.theta != other.theta:
             return False
         return True
 
@@ -138,31 +144,46 @@ class Turtle(metaclass=Metaclass_Turtle):
         self._name = value
 
     @builtins.property
-    def pose_x(self):
-        """Message field 'pose_x'."""
-        return self._pose_x
+    def x(self):
+        """Message field 'x'."""
+        return self._x
 
-    @pose_x.setter
-    def pose_x(self, value):
+    @x.setter
+    def x(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'pose_x' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'pose_x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._pose_x = value
+                "The 'x' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'x' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._x = value
 
     @builtins.property
-    def pose_y(self):
-        """Message field 'pose_y'."""
-        return self._pose_y
+    def y(self):
+        """Message field 'y'."""
+        return self._y
 
-    @pose_y.setter
-    def pose_y(self, value):
+    @y.setter
+    def y(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'pose_y' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'pose_y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._pose_y = value
+                "The 'y' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'y' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._y = value
+
+    @builtins.property
+    def theta(self):
+        """Message field 'theta'."""
+        return self._theta
+
+    @theta.setter
+    def theta(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'theta' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'theta' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._theta = value
