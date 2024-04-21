@@ -13,12 +13,15 @@ from turtle_interfaces.srv import CatchTurtle
 class SpawnerClientNode(Node):
     def __init__(self):
         super().__init__("spawner_client")
+        self.declare_parameter("spawn_freq", 0.5)
+        self.declare_parameter("turtle_name_prefix", "turtle")
 
-        self.turtle_name_prefix_ = "turtle"
+        self.spawn_freq = self.get_parameter("spawn_freq").value
+        self.turtle_name_prefix_ = self.get_parameter("turtle_name_prefix").value
         self.turtle_counter_ = 0
         self.alive_turtles_ = []
         self.alive_turtles_publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
-        self.spawn_turtle_timer_ = self.create_timer(1, self.spawn_new_turtle)
+        self.spawn_turtle_timer_ = self.create_timer(1.0/self.spawn_freq, self.spawn_new_turtle)
         self.server_catcher_ = self.create_service(CatchTurtle, "catch_turtle", self.callback_catch_turtle)
 
     def callback_catch_turtle(self, request, response):
