@@ -18,27 +18,8 @@ class SpawnerClientNode(Node):
         self.turtle_counter_ = 0
         self.alive_turtles_ = []
         self.alive_turtles_publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
-        self.spawn_turtle_timer_ = self.create_timer(2.0, self.spawn_new_turtle)
+        self.spawn_turtle_timer_ = self.create_timer(1, self.spawn_new_turtle)
         self.server_catcher_ = self.create_service(CatchTurtle, "catch_turtle", self.callback_catch_turtle)
-
-
-        # self.client_spawn_ = self.create_client(Spawn, "spawn")
-
-        # while not self.client_spawn_.wait_for_service(timeout_sec=1.0):
-        #         self.get_logger().info('turtle_sim is not up')
-
-        # timer_period = 1  # seconds
-
-        # self.timer = self.create_timer(timer_period, self.timer_callback)
-
-        # self.publisher_alive_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
-
-        # self.server_catcher_ = self.create_service(CatchTurtle, "catch", self.callback_catch)
-
-        # self.client_kill_ = self.create_client(Kill, "kill")
-
-        # self.alive_list = TurtleArray()
-
 
     def callback_catch_turtle(self, request, response):
         self.call_kill_server(request.name)
