@@ -1,0 +1,25 @@
+[0.531s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/src/py_pkg': CMAKE_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/launch PYTHONPATH=/home/moekatra22/catch_them_all_turtlesim/build/py_pkg/prefix_override:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/moekatra22/catch_them_all_turtlesim/build/py_pkg/build install --record /home/moekatra22/catch_them_all_turtlesim/build/py_pkg/install.log --single-version-externally-managed install_data
+[0.669s] running egg_info
+[0.669s] writing ../../build/py_pkg/py_pkg.egg-info/PKG-INFO
+[0.669s] writing dependency_links to ../../build/py_pkg/py_pkg.egg-info/dependency_links.txt
+[0.669s] writing entry points to ../../build/py_pkg/py_pkg.egg-info/entry_points.txt
+[0.669s] writing requirements to ../../build/py_pkg/py_pkg.egg-info/requires.txt
+[0.670s] writing top-level names to ../../build/py_pkg/py_pkg.egg-info/top_level.txt
+[0.670s] reading manifest file '../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[0.671s] writing manifest file '../../build/py_pkg/py_pkg.egg-info/SOURCES.txt'
+[0.671s] running build
+[0.671s] running build_py
+[0.671s] copying py_pkg/spawner_node.py -> /home/moekatra22/catch_them_all_turtlesim/build/py_pkg/build/lib/py_pkg
+[0.671s] running install
+[0.671s] running install_lib
+[0.672s] copying /home/moekatra22/catch_them_all_turtlesim/build/py_pkg/build/lib/py_pkg/spawner_node.py -> /home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages/py_pkg
+[0.672s] byte-compiling /home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages/py_pkg/spawner_node.py to spawner_node.cpython-310.pyc
+[0.673s] running install_data
+[0.673s] running install_egg_info
+[0.674s] removing '/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages/py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.675s] Copying ../../build/py_pkg/py_pkg.egg-info to /home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages/py_pkg-0.0.0-py3.10.egg-info
+[0.675s] running install_scripts
+[0.688s] Installing controller script to /home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/py_pkg
+[0.688s] Installing spawner script to /home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/py_pkg
+[0.688s] writing list of installed files to '/home/moekatra22/catch_them_all_turtlesim/build/py_pkg/install.log'
+[0.703s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/src/py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/launch PYTHONPATH=/home/moekatra22/catch_them_all_turtlesim/build/py_pkg/prefix_override:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/py_pkg build --build-base /home/moekatra22/catch_them_all_turtlesim/build/py_pkg/build install --record /home/moekatra22/catch_them_all_turtlesim/build/py_pkg/install.log --single-version-externally-managed install_data
