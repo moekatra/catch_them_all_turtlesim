@@ -160,7 +160,15 @@ bool turtle_interfaces__srv__catch_turtle__response__convert_from_py(PyObject * 
     assert(strncmp("turtle_interfaces.srv._catch_turtle.CatchTurtle_Response", full_classname_dest, 56) == 0);
   }
   turtle_interfaces__srv__CatchTurtle_Response * ros_message = _ros_message;
-  ros_message->structure_needs_at_least_one_member = 0;
+  {  // success
+    PyObject * field = PyObject_GetAttrString(_pymsg, "success");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->success = (Py_True == field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -182,7 +190,18 @@ PyObject * turtle_interfaces__srv__catch_turtle__response__convert_to_py(void * 
       return NULL;
     }
   }
-  (void)raw_ros_message;
+  turtle_interfaces__srv__CatchTurtle_Response * ros_message = (turtle_interfaces__srv__CatchTurtle_Response *)raw_ros_message;
+  {  // success
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->success ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "success", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
 
   // ownership of _pymessage is transferred to the caller
   return _pymessage;

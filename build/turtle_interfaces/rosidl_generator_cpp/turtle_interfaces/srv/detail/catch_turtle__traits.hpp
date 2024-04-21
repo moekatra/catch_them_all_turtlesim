@@ -116,17 +116,28 @@ inline void to_flow_style_yaml(
   const CatchTurtle_Response & msg,
   std::ostream & out)
 {
-  (void)msg;
-  out << "null";
+  out << "{";
+  // member: success
+  {
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
+  }
+  out << "}";
 }  // NOLINT(readability/fn_size)
 
 inline void to_block_style_yaml(
   const CatchTurtle_Response & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  (void)msg;
-  (void)indentation;
-  out << "null\n";
+  // member: success
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
+    out << "\n";
+  }
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const CatchTurtle_Response & msg, bool use_flow_style = false)

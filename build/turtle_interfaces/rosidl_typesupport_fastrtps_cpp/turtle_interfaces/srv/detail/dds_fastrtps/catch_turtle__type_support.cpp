@@ -247,8 +247,8 @@ cdr_serialize(
   const turtle_interfaces::srv::CatchTurtle_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: structure_needs_at_least_one_member
-  cdr << ros_message.structure_needs_at_least_one_member;
+  // Member: success
+  cdr << (ros_message.success ? true : false);
   return true;
 }
 
@@ -258,8 +258,12 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   turtle_interfaces::srv::CatchTurtle_Response & ros_message)
 {
-  // Member: structure_needs_at_least_one_member
-  cdr >> ros_message.structure_needs_at_least_one_member;
+  // Member: success
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.success = tmp ? true : false;
+  }
 
   return true;
 }
@@ -277,9 +281,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: structure_needs_at_least_one_member
+  // Member: success
   {
-    size_t item_size = sizeof(ros_message.structure_needs_at_least_one_member);
+    size_t item_size = sizeof(ros_message.success);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -307,7 +311,7 @@ max_serialized_size_CatchTurtle_Response(
   is_plain = true;
 
 
-  // Member: structure_needs_at_least_one_member
+  // Member: success
   {
     size_t array_size = 1;
 
@@ -323,7 +327,7 @@ max_serialized_size_CatchTurtle_Response(
     using DataType = turtle_interfaces::srv::CatchTurtle_Response;
     is_plain =
       (
-      offsetof(DataType, structure_needs_at_least_one_member) +
+      offsetof(DataType, success) +
       last_member_size
       ) == ret_val;
   }

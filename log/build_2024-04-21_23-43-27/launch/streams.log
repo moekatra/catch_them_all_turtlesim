@@ -1,0 +1,22 @@
+[0.010s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/build/launch': AMENT_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/moekatra22/catch_them_all_turtlesim/build/launch -- -j4 -l4
+[0.044s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/build/launch' returned '0': AMENT_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/moekatra22/catch_them_all_turtlesim/build/launch -- -j4 -l4
+[0.062s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/build/launch': AMENT_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/moekatra22/catch_them_all_turtlesim/build/launch
+[0.066s] -- Install configuration: ""
+[0.066s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/launch
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/launch/catch_them_all.launch.py
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/ament_index/resource_index/package_run_dependencies/launch
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/ament_index/resource_index/parent_prefix_path/launch
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/environment/ament_prefix_path.sh
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/environment/ament_prefix_path.dsv
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/environment/path.sh
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/environment/path.dsv
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/local_setup.bash
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/local_setup.sh
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/local_setup.zsh
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/local_setup.dsv
+[0.067s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/package.dsv
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/ament_index/resource_index/packages/launch
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/cmake/launchConfig.cmake
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/cmake/launchConfig-version.cmake
+[0.067s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/launch/share/launch/package.xml
+[0.069s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/build/launch' returned '0': AMENT_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble CMAKE_PREFIX_PATH=/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/moekatra22/catch_them_all_turtlesim/build/launch

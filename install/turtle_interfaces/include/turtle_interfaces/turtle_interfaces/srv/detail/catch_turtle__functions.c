@@ -256,7 +256,7 @@ turtle_interfaces__srv__CatchTurtle_Response__init(turtle_interfaces__srv__Catch
   if (!msg) {
     return false;
   }
-  // structure_needs_at_least_one_member
+  // success
   return true;
 }
 
@@ -266,7 +266,7 @@ turtle_interfaces__srv__CatchTurtle_Response__fini(turtle_interfaces__srv__Catch
   if (!msg) {
     return;
   }
-  // structure_needs_at_least_one_member
+  // success
 }
 
 bool
@@ -275,8 +275,8 @@ turtle_interfaces__srv__CatchTurtle_Response__are_equal(const turtle_interfaces_
   if (!lhs || !rhs) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  if (lhs->structure_needs_at_least_one_member != rhs->structure_needs_at_least_one_member) {
+  // success
+  if (lhs->success != rhs->success) {
     return false;
   }
   return true;
@@ -290,8 +290,8 @@ turtle_interfaces__srv__CatchTurtle_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // structure_needs_at_least_one_member
-  output->structure_needs_at_least_one_member = input->structure_needs_at_least_one_member;
+  // success
+  output->success = input->success;
   return true;
 }
 
