@@ -18,7 +18,7 @@ class SpawnerClientNode(Node):
         self.turtle_counter_ = 0
         self.alive_turtles_ = []
         self.alive_turtles_publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
-        self.spawn_turtle_timer_ = self.create_timer(2.0, self.spawn_new_turtle)
+        self.spawn_turtle_timer_ = self.create_timer(1, self.spawn_new_turtle)
         self.server_catcher_ = self.create_service(CatchTurtle, "catch_turtle", self.callback_catch_turtle)
 
     def callback_catch_turtle(self, request, response):
