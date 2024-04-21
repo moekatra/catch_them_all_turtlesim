@@ -7,6 +7,7 @@ from rclpy.node import Node
 
 from turtlesim.srv import Spawn, Kill
 from turtle_interfaces.msg import Turtle, TurtleArray
+from turtle_interfaces.srv import CatchTurtle
 
 
 class SpawnerClientNode(Node):
@@ -18,24 +19,13 @@ class SpawnerClientNode(Node):
         self.alive_turtles_ = []
         self.alive_turtles_publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
         self.spawn_turtle_timer_ = self.create_timer(2.0, self.spawn_new_turtle)
+        self.server_catcher_ = self.create_service(CatchTurtle, "catch_turtle", self.callback_catch_turtle)
 
-        # self.client_spawn_ = self.create_client(Spawn, "spawn")
-
-        # while not self.client_spawn_.wait_for_service(timeout_sec=1.0):
-        #         self.get_logger().info('turtle_sim is not up')
-
-        # timer_period = 1  # seconds
-
-        # self.timer = self.create_timer(timer_period, self.timer_callback)
-
-        # self.publisher_alive_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
-
-        # self.server_catcher_ = self.create_service(CatchTurtle, "catch", self.callback_catch)
-
-        # self.client_kill_ = self.create_client(Kill, "kill")
-
-        # self.alive_list = TurtleArray()
-
+    def callback_catch_turtle(self, request, response):
+        self.call_kill_server(request.name)
+        response.success = True
+        return response 
+    
     def publish_alive_turtles(self):
         msg = TurtleArray()
         msg.turtle_array = self.alive_turtles_
@@ -73,6 +63,26 @@ class SpawnerClientNode(Node):
                 new_turtle.theta = theta
                 self.alive_turtles_.append(new_turtle)
                 self.publish_alive_turtles()
+        except Exception as e:
+            self.get_logger().error("Service call failed %r" % (e,))
+
+    def call_kill_server(self, turtle_name):
+        client = self.create_client(Kill, "kill")
+        while not client.wait_for_service(1.0):
+                self.get_logger().info('Waiting for server ...')
+        req = Kill.Request()
+        req.name = turtle_name
+        future = client.call_async(req)
+        future.add_done_callback(partial(self.callback_call_kill, turtle_name=turtle_name))
+    
+    def callback_call_kill(self, future, turtle_name):
+        try:
+            future.result()
+            for (i, turtle) in enumerate(self.alive_turtles_):
+                if turtle.name == turtle_name:
+                    del self.alive_turtles_[i]
+                    self.publish_alive_turtles()
+                    break
         except Exception as e:
             self.get_logger().error("Service call failed %r" % (e,))
 
