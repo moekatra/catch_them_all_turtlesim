@@ -1,0 +1,26 @@
+[0.012s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg -- -j4 -l4
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target controller[0m
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target spawner[0m
+[0.090s] [ 50%] Built target spawner
+[0.090s] [100%] Built target controller
+[0.097s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg -- -j4 -l4
+[0.123s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg
+[0.130s] -- Install configuration: ""
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/spawner
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/controller
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/package_run_dependencies/cpp_pkg
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/parent_prefix_path/cpp_pkg
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.sh
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.dsv
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/path.sh
+[0.130s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/path.dsv
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.bash
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.sh
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.zsh
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.dsv
+[0.131s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/package.dsv
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/packages/cpp_pkg
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig.cmake
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig-version.cmake
+[0.131s] -- Up-to-date: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/package.xml
+[0.132s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg

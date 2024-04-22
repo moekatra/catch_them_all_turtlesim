@@ -89,32 +89,6 @@ class SpawnerClientNode(Node):
         except Exception as e:
             self.get_logger().error("Service call failed %r" % (e,))
 
-    # def callback_catch(self,request, response):
-    #     self.call_kill_server(request.name)
-    #     return response
-
-    # def call_kill_server(self, name):
-    #     req = Kill.Request()
-    #     req.name = name
-    #     future = self.client_kill_.call_async(req)
-    #     future.add_done_callback(partial(self.callback_call_kill, name=name))
-    
-    # def callback_call_kill(self, future, name):
-    #     try:
-    #         self.get_logger().info(f'turtle killed with name: {name}') 
-    #         for turtle in self.alive_list.turtle_array:
-    #             if turtle.name == name:
-    #                 self.alive_list.turtle_array.remove(turtle)
-    #                 break
-    #     except Exception as e:
-    #         self.get_logger().error("Service call failed %r" % (e,))
-    
-    # def timer_callback(self):
-    #     x = float(random.randint(1,10))
-    #     y = float(random.randint(1,10))
-    #     self.call_spawn_server(x,y)
-    #     self.publisher_alive_.publish(self.alive_list)
-
 def main(args=None):
     rclpy.init(args=args)
     node = SpawnerClientNode()

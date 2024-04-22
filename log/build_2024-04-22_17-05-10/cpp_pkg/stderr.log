@@ -1,0 +1,29 @@
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/spawner_node.cpp:[m[K In member function ‘[01m[Kvoid SpawnerNode::publishAliveTurtles()[m[K’:
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/spawner_node.cpp:32:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kturtles[m[K’
+   32 |         msg.[01;31m[Kturtles[m[K = alive_turtles_;
+      |             [01;31m[K^~~~~~~[m[K
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:[m[K In member function ‘[01m[Kvoid ControllerNode::callbackTurtlesToCatch(turtle_interfaces::msg::TurtleArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:42:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kturtles[m[K’
+   42 |         if (!msg->[01;31m[Kturtles[m[K.empty())
+      |                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:46:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kturtles[m[K’
+   46 |                 turtle_interfaces::msg::Turtle closest_turtle = msg->[01;31m[Kturtles[m[K.at(0);
+      |                                                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:49:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kturtles[m[K’
+   49 |                 for (int i = 1; i < (int)msg->[01;31m[Kturtles[m[K.size(); i++)
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:51:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kturtles[m[K’
+   51 |                     double distance = getDistanceFromCurrentPose(msg->[01;31m[Kturtles[m[K.at(i));
+      |                                                                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:54:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kturtles[m[K’
+   54 |                         closest_turtle = msg->[01;31m[Kturtles[m[K.at(i);
+      |                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:63:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kturtles[m[K’
+   63 |                 turtle_to_catch_ = msg->[01;31m[Kturtles[m[K.at(0);
+      |                                         [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/spawner.dir/build.make:76: CMakeFiles/spawner.dir/src/spawner_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/spawner.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/controller.dir/build.make:76: CMakeFiles/controller.dir/src/controller_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

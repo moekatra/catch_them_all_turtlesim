@@ -1,0 +1,167 @@
+[0.000000] (-) TimerEvent: {}
+[0.000138] (-) JobUnselected: {'identifier': 'launch'}
+[0.000395] (-) JobUnselected: {'identifier': 'py_pkg'}
+[0.000450] (-) JobUnselected: {'identifier': 'turtle_interfaces'}
+[0.000475] (cpp_pkg) JobQueued: {'identifier': 'cpp_pkg', 'dependencies': OrderedDict()}
+[0.000499] (cpp_pkg) JobStarted: {'identifier': 'cpp_pkg'}
+[0.006287] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'cmake'}
+[0.007022] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg', '-DCMAKE_INSTALL_PREFIX=/home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg'], 'cwd': '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg', 'env': OrderedDict([('USER', 'moekatra22'), ('LC_TIME', 'ar_LB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moekatra22'), ('OLDPWD', '/home/moekatra22/catch_them_all_turtlesim/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_LB.UTF-8'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moekatra22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moekatra22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moekatra22-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1479,unix/moekatra22-QEMU-Virtual-Machine:/tmp/.ICE-unix/1479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_LB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac3f3771_a05d_46bf_a24c_c037ed941efe'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_LB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NRIJM2'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_LB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ar_LB.UTF-8'), ('LC_IDENTIFICATION', 'ar_LB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_LB.UTF-8'), ('LC_PAPER', 'ar_LB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.027453] (cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099515] (-) TimerEvent: {}
+[0.116182] (cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.138571] (cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.140215] (cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.144938] (cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.153327] (cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.167701] (cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.199616] (-) TimerEvent: {}
+[0.210913] (cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.211864] (cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299728] (-) TimerEvent: {}
+[0.308095] (cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.399882] (-) TimerEvent: {}
+[0.446702] (cpp_pkg) StdoutLine: {'line': b'-- Found turtlesim: 1.4.2 (/opt/ros/humble/share/turtlesim/cmake)\n'}
+[0.500001] (-) TimerEvent: {}
+[0.560377] (cpp_pkg) StdoutLine: {'line': b'-- Found turtle_interfaces: 0.0.0 (/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/share/turtle_interfaces/cmake)\n'}
+[0.572807] (cpp_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.602244] (-) TimerEvent: {}
+[0.655273] (cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.670354] (cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.671521] (cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg\n'}
+[0.676905] (cpp_pkg) CommandEnded: {'returncode': 0}
+[0.677404] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'build'}
+[0.678677] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg', 'env': OrderedDict([('USER', 'moekatra22'), ('LC_TIME', 'ar_LB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moekatra22'), ('OLDPWD', '/home/moekatra22/catch_them_all_turtlesim/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_LB.UTF-8'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moekatra22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moekatra22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moekatra22-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1479,unix/moekatra22-QEMU-Virtual-Machine:/tmp/.ICE-unix/1479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_LB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac3f3771_a05d_46bf_a24c_c037ed941efe'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_LB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NRIJM2'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_LB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ar_LB.UTF-8'), ('LC_IDENTIFICATION', 'ar_LB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_LB.UTF-8'), ('LC_PAPER', 'ar_LB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.702549] (-) TimerEvent: {}
+[0.708206] (cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/controller_node.cpp.o\x1b[0m\n'}
+[0.708342] (cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/spawner.dir/src/spawner_node.cpp.o\x1b[0m\n'}
+[0.802673] (-) TimerEvent: {}
+[0.905897] (-) TimerEvent: {}
+[1.006597] (-) TimerEvent: {}
+[1.107428] (-) TimerEvent: {}
+[1.208019] (-) TimerEvent: {}
+[1.308505] (-) TimerEvent: {}
+[1.409125] (-) TimerEvent: {}
+[1.509922] (-) TimerEvent: {}
+[1.611146] (-) TimerEvent: {}
+[1.713875] (-) TimerEvent: {}
+[1.815017] (-) TimerEvent: {}
+[1.916898] (-) TimerEvent: {}
+[2.017981] (-) TimerEvent: {}
+[2.120431] (-) TimerEvent: {}
+[2.221930] (-) TimerEvent: {}
+[2.323166] (-) TimerEvent: {}
+[2.423747] (-) TimerEvent: {}
+[2.524334] (-) TimerEvent: {}
+[2.624845] (-) TimerEvent: {}
+[2.726529] (-) TimerEvent: {}
+[2.826964] (-) TimerEvent: {}
+[2.931575] (-) TimerEvent: {}
+[3.039778] (-) TimerEvent: {}
+[3.142444] (-) TimerEvent: {}
+[3.244011] (-) TimerEvent: {}
+[3.345586] (-) TimerEvent: {}
+[3.447422] (-) TimerEvent: {}
+[3.548612] (-) TimerEvent: {}
+[3.649712] (-) TimerEvent: {}
+[3.751492] (-) TimerEvent: {}
+[3.852453] (-) TimerEvent: {}
+[3.954287] (-) TimerEvent: {}
+[4.061848] (-) TimerEvent: {}
+[4.163744] (-) TimerEvent: {}
+[4.253179] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/spawner_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid SpawnerNode::publishAliveTurtles()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.254269] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/spawner_node.cpp:32:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.254624] (cpp_pkg) StderrLine: {'line': b'   32 |         msg.\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K = alive_turtles_;\n'}
+[4.254686] (cpp_pkg) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.263800] (-) TimerEvent: {}
+[4.343484] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ControllerNode::callbackTurtlesToCatch(turtle_interfaces::msg::TurtleArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.343739] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:42:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.343827] (cpp_pkg) StderrLine: {'line': b'   42 |         if (!msg->\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K.empty())\n'}
+[4.343968] (cpp_pkg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.344026] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:46:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.344145] (cpp_pkg) StderrLine: {'line': b'   46 |                 turtle_interfaces::msg::Turtle closest_turtle = msg->\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K.at(0);\n'}
+[4.344234] (cpp_pkg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.344326] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:49:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.344389] (cpp_pkg) StderrLine: {'line': b'   49 |                 for (int i = 1; i < (int)msg->\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K.size(); i++)\n'}
+[4.344470] (cpp_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.344576] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:51:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.344651] (cpp_pkg) StderrLine: {'line': b'   51 |                     double distance = getDistanceFromCurrentPose(msg->\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K.at(i));\n'}
+[4.344691] (cpp_pkg) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.344721] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:54:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.344828] (cpp_pkg) StderrLine: {'line': b'   54 |                         closest_turtle = msg->\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K.at(i);\n'}
+[4.344916] (cpp_pkg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.346889] (cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/moekatra22/catch_them_all_turtlesim/src/cpp_pkg/src/controller_node.cpp:63:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct turtle_interfaces::msg::TurtleArray_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kturtles\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.347012] (cpp_pkg) StderrLine: {'line': b'   63 |                 turtle_to_catch_ = msg->\x1b[01;31m\x1b[Kturtles\x1b[m\x1b[K.at(0);\n'}
+[4.347107] (cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.363987] (-) TimerEvent: {}
+[4.464682] (-) TimerEvent: {}
+[4.566905] (-) TimerEvent: {}
+[4.667713] (-) TimerEvent: {}
+[4.769937] (-) TimerEvent: {}
+[4.870584] (-) TimerEvent: {}
+[4.971374] (-) TimerEvent: {}
+[5.071836] (-) TimerEvent: {}
+[5.172538] (-) TimerEvent: {}
+[5.274232] (-) TimerEvent: {}
+[5.382406] (-) TimerEvent: {}
+[5.483049] (-) TimerEvent: {}
+[5.586371] (-) TimerEvent: {}
+[5.687411] (-) TimerEvent: {}
+[5.793435] (-) TimerEvent: {}
+[5.894593] (-) TimerEvent: {}
+[5.996468] (-) TimerEvent: {}
+[6.101858] (-) TimerEvent: {}
+[6.203229] (-) TimerEvent: {}
+[6.306533] (-) TimerEvent: {}
+[6.409867] (-) TimerEvent: {}
+[6.514766] (-) TimerEvent: {}
+[6.619657] (-) TimerEvent: {}
+[6.721601] (-) TimerEvent: {}
+[6.823332] (-) TimerEvent: {}
+[6.925216] (-) TimerEvent: {}
+[7.029249] (-) TimerEvent: {}
+[7.130817] (-) TimerEvent: {}
+[7.232932] (-) TimerEvent: {}
+[7.335291] (-) TimerEvent: {}
+[7.438269] (-) TimerEvent: {}
+[7.542405] (-) TimerEvent: {}
+[7.645582] (-) TimerEvent: {}
+[7.746828] (-) TimerEvent: {}
+[7.848486] (-) TimerEvent: {}
+[7.949520] (-) TimerEvent: {}
+[8.050867] (-) TimerEvent: {}
+[8.152086] (-) TimerEvent: {}
+[8.252860] (-) TimerEvent: {}
+[8.353721] (-) TimerEvent: {}
+[8.454590] (-) TimerEvent: {}
+[8.555619] (-) TimerEvent: {}
+[8.657209] (-) TimerEvent: {}
+[8.757990] (-) TimerEvent: {}
+[8.854609] (cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/spawner.dir/build.make:76: CMakeFiles/spawner.dir/src/spawner_node.cpp.o] Error 1\n'}
+[8.855784] (cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/spawner.dir/all] Error 2\n'}
+[8.855862] (cpp_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[8.858355] (-) TimerEvent: {}
+[8.959246] (-) TimerEvent: {}
+[9.060020] (-) TimerEvent: {}
+[9.162119] (-) TimerEvent: {}
+[9.262582] (-) TimerEvent: {}
+[9.363836] (-) TimerEvent: {}
+[9.466246] (-) TimerEvent: {}
+[9.567166] (-) TimerEvent: {}
+[9.669654] (-) TimerEvent: {}
+[9.772476] (-) TimerEvent: {}
+[9.874021] (-) TimerEvent: {}
+[9.974350] (-) TimerEvent: {}
+[10.075044] (-) TimerEvent: {}
+[10.179649] (-) TimerEvent: {}
+[10.280029] (-) TimerEvent: {}
+[10.381686] (-) TimerEvent: {}
+[10.482657] (-) TimerEvent: {}
+[10.583095] (-) TimerEvent: {}
+[10.683653] (-) TimerEvent: {}
+[10.692594] (cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/controller.dir/build.make:76: CMakeFiles/controller.dir/src/controller_node.cpp.o] Error 1\n'}
+[10.693622] (cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/controller.dir/all] Error 2\n'}
+[10.693719] (cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[10.701973] (cpp_pkg) CommandEnded: {'returncode': 2}
+[10.774235] (cpp_pkg) JobEnded: {'identifier': 'cpp_pkg', 'rc': 2}
+[10.783769] (-) TimerEvent: {}
+[10.784811] (-) EventReactorShutdown: {}
