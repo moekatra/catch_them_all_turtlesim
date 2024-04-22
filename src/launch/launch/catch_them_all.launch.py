@@ -7,7 +7,7 @@ def generate_launch_description():
             package='py_pkg',
             executable='spawner',
             parameters=[
-                {"spawn_freq": 1.0},
+                {"spawn_freq": 1.5},
                 {"turtle_name_prefix": "my_turtle"}
             ]
         ),
