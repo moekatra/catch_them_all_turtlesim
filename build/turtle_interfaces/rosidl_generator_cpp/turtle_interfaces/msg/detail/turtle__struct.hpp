@@ -39,8 +39,9 @@ struct Turtle_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->name = "";
-      this->pose_x = 0.0f;
-      this->pose_y = 0.0f;
+      this->x = 0.0;
+      this->y = 0.0;
+      this->theta = 0.0;
     }
   }
 
@@ -51,8 +52,9 @@ struct Turtle_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->name = "";
-      this->pose_x = 0.0f;
-      this->pose_y = 0.0f;
+      this->x = 0.0;
+      this->y = 0.0;
+      this->theta = 0.0;
     }
   }
 
@@ -60,12 +62,15 @@ struct Turtle_
   using _name_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _name_type name;
-  using _pose_x_type =
-    float;
-  _pose_x_type pose_x;
-  using _pose_y_type =
-    float;
-  _pose_y_type pose_y;
+  using _x_type =
+    double;
+  _x_type x;
+  using _y_type =
+    double;
+  _y_type y;
+  using _theta_type =
+    double;
+  _theta_type theta;
 
   // setters for named parameter idiom
   Type & set__name(
@@ -74,16 +79,22 @@ struct Turtle_
     this->name = _arg;
     return *this;
   }
-  Type & set__pose_x(
-    const float & _arg)
+  Type & set__x(
+    const double & _arg)
   {
-    this->pose_x = _arg;
+    this->x = _arg;
     return *this;
   }
-  Type & set__pose_y(
-    const float & _arg)
+  Type & set__y(
+    const double & _arg)
   {
-    this->pose_y = _arg;
+    this->y = _arg;
+    return *this;
+  }
+  Type & set__theta(
+    const double & _arg)
+  {
+    this->theta = _arg;
     return *this;
   }
 
@@ -132,10 +143,13 @@ struct Turtle_
     if (this->name != other.name) {
       return false;
     }
-    if (this->pose_x != other.pose_x) {
+    if (this->x != other.x) {
       return false;
     }
-    if (this->pose_y != other.pose_y) {
+    if (this->y != other.y) {
+      return false;
+    }
+    if (this->theta != other.theta) {
       return false;
     }
     return true;

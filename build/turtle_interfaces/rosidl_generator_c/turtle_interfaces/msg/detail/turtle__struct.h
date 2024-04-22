@@ -25,8 +25,9 @@ extern "C"
 typedef struct turtle_interfaces__msg__Turtle
 {
   rosidl_runtime_c__String name;
-  float pose_x;
-  float pose_y;
+  double x;
+  double y;
+  double theta;
 } turtle_interfaces__msg__Turtle;
 
 // Struct for a sequence of turtle_interfaces__msg__Turtle.

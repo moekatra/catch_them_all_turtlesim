@@ -125,14 +125,14 @@ void turtle_interfaces__srv__CatchTurtle_Response__rosidl_typesupport_introspect
 
 static rosidl_typesupport_introspection_c__MessageMember turtle_interfaces__srv__CatchTurtle_Response__rosidl_typesupport_introspection_c__CatchTurtle_Response_message_member_array[1] = {
   {
-    "structure_needs_at_least_one_member",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_UINT8,  // type
+    "success",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(turtle_interfaces__srv__CatchTurtle_Response, structure_needs_at_least_one_member),  // bytes offset in struct
+    offsetof(turtle_interfaces__srv__CatchTurtle_Response, success),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

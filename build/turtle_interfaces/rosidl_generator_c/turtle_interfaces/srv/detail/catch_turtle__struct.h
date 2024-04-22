@@ -43,7 +43,7 @@ typedef struct turtle_interfaces__srv__CatchTurtle_Request__Sequence
 /// Struct defined in srv/CatchTurtle in the package turtle_interfaces.
 typedef struct turtle_interfaces__srv__CatchTurtle_Response
 {
-  uint8_t structure_needs_at_least_one_member;
+  bool success;
 } turtle_interfaces__srv__CatchTurtle_Response;
 
 // Struct for a sequence of turtle_interfaces__srv__CatchTurtle_Response.

@@ -152,7 +152,7 @@ struct CatchTurtle_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->success = false;
     }
   }
 
@@ -162,15 +162,22 @@ struct CatchTurtle_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->structure_needs_at_least_one_member = 0;
+      this->success = false;
     }
   }
 
   // field types and members
-  using _structure_needs_at_least_one_member_type =
-    uint8_t;
-  _structure_needs_at_least_one_member_type structure_needs_at_least_one_member;
+  using _success_type =
+    bool;
+  _success_type success;
 
+  // setters for named parameter idiom
+  Type & set__success(
+    const bool & _arg)
+  {
+    this->success = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -214,7 +221,7 @@ struct CatchTurtle_Response_
   // comparison operators
   bool operator==(const CatchTurtle_Response_ & other) const
   {
-    if (this->structure_needs_at_least_one_member != other.structure_needs_at_least_one_member) {
+    if (this->success != other.success) {
       return false;
     }
     return true;

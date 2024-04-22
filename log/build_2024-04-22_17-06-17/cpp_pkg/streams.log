@@ -1,0 +1,32 @@
+[0.009s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg -- -j4 -l4
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target spawner[0m
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target controller[0m
+[0.117s] [ 25%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller_node.cpp.o[0m
+[0.124s] [ 50%] [32mBuilding CXX object CMakeFiles/spawner.dir/src/spawner_node.cpp.o[0m
+[10.358s] [ 75%] [32m[1mLinking CXX executable spawner[0m
+[10.890s] [ 75%] Built target spawner
+[18.376s] [100%] [32m[1mLinking CXX executable controller[0m
+[19.034s] [100%] Built target controller
+[19.047s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg -- -j4 -l4
+[19.088s] Invoking command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg
+[19.106s] -- Install configuration: ""
+[19.106s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/spawner
+[19.106s] -- Set runtime path of "/home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/spawner" to ""
+[19.106s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/controller
+[19.112s] -- Set runtime path of "/home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/controller" to ""
+[19.113s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/package_run_dependencies/cpp_pkg
+[19.113s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/parent_prefix_path/cpp_pkg
+[19.114s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.sh
+[19.115s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.dsv
+[19.115s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/path.sh
+[19.115s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/path.dsv
+[19.116s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.bash
+[19.116s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.sh
+[19.117s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.zsh
+[19.117s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.dsv
+[19.118s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/package.dsv
+[19.118s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/packages/cpp_pkg
+[19.118s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig.cmake
+[19.118s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig-version.cmake
+[19.119s] -- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/package.xml
+[19.121s] Invoked command in '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg

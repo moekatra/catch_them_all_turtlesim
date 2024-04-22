@@ -5,11 +5,18 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='py_pkg',
-            executable='spawner'
+            executable='spawner',
+            parameters=[
+                {"spawn_freq": 1.5},
+                {"turtle_name_prefix": "my_turtle"}
+            ]
         ),
         Node(
             package='py_pkg',
-            executable='controller'
+            executable='controller',
+            parameters=[
+                {"catch_closest_turtle_first": True}
+            ]
         ),
         Node(
             package='turtlesim',

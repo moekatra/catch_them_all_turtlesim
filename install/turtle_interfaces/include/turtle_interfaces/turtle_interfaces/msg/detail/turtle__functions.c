@@ -26,8 +26,9 @@ turtle_interfaces__msg__Turtle__init(turtle_interfaces__msg__Turtle * msg)
     turtle_interfaces__msg__Turtle__fini(msg);
     return false;
   }
-  // pose_x
-  // pose_y
+  // x
+  // y
+  // theta
   return true;
 }
 
@@ -39,8 +40,9 @@ turtle_interfaces__msg__Turtle__fini(turtle_interfaces__msg__Turtle * msg)
   }
   // name
   rosidl_runtime_c__String__fini(&msg->name);
-  // pose_x
-  // pose_y
+  // x
+  // y
+  // theta
 }
 
 bool
@@ -55,12 +57,16 @@ turtle_interfaces__msg__Turtle__are_equal(const turtle_interfaces__msg__Turtle *
   {
     return false;
   }
-  // pose_x
-  if (lhs->pose_x != rhs->pose_x) {
+  // x
+  if (lhs->x != rhs->x) {
     return false;
   }
-  // pose_y
-  if (lhs->pose_y != rhs->pose_y) {
+  // y
+  if (lhs->y != rhs->y) {
+    return false;
+  }
+  // theta
+  if (lhs->theta != rhs->theta) {
     return false;
   }
   return true;
@@ -80,10 +86,12 @@ turtle_interfaces__msg__Turtle__copy(
   {
     return false;
   }
-  // pose_x
-  output->pose_x = input->pose_x;
-  // pose_y
-  output->pose_y = input->pose_y;
+  // x
+  output->x = input->x;
+  // y
+  output->y = input->y;
+  // theta
+  output->theta = input->theta;
   return true;
 }
 

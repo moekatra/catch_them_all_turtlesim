@@ -1,3 +1,4 @@
 string name
-float32 pose_x
-float32 pose_y
+float64 x
+float64 y
+float64 theta

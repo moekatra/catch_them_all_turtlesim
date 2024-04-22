@@ -60,6 +60,26 @@ namespace turtle_interfaces
 namespace srv
 {
 
+namespace builder
+{
+
+class Init_CatchTurtle_Response_success
+{
+public:
+  Init_CatchTurtle_Response_success()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  ::turtle_interfaces::srv::CatchTurtle_Response success(::turtle_interfaces::srv::CatchTurtle_Response::_success_type arg)
+  {
+    msg_.success = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::turtle_interfaces::srv::CatchTurtle_Response msg_;
+};
+
+}  // namespace builder
 
 }  // namespace srv
 
@@ -70,7 +90,7 @@ template<>
 inline
 auto build<::turtle_interfaces::srv::CatchTurtle_Response>()
 {
-  return ::turtle_interfaces::srv::CatchTurtle_Response(rosidl_runtime_cpp::MessageInitialization::ZERO);
+  return turtle_interfaces::srv::builder::Init_CatchTurtle_Response_success();
 }
 
 }  // namespace turtle_interfaces

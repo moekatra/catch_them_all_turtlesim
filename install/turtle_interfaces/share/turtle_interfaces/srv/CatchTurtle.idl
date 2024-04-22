@@ -9,7 +9,7 @@ module turtle_interfaces {
       string name;
     };
     struct CatchTurtle_Response {
-      uint8 structure_needs_at_least_one_member;
+      boolean success;
     };
   };
 };

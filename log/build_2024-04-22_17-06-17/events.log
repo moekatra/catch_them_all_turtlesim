@@ -1,0 +1,232 @@
+[0.000000] (-) TimerEvent: {}
+[0.000137] (-) JobUnselected: {'identifier': 'launch'}
+[0.000155] (-) JobUnselected: {'identifier': 'py_pkg'}
+[0.000174] (-) JobUnselected: {'identifier': 'turtle_interfaces'}
+[0.000186] (cpp_pkg) JobQueued: {'identifier': 'cpp_pkg', 'dependencies': OrderedDict()}
+[0.000202] (cpp_pkg) JobStarted: {'identifier': 'cpp_pkg'}
+[0.006093] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'cmake'}
+[0.006937] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'build'}
+[0.006971] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg', 'env': OrderedDict([('USER', 'moekatra22'), ('LC_TIME', 'ar_LB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moekatra22'), ('OLDPWD', '/home/moekatra22/catch_them_all_turtlesim/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_LB.UTF-8'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moekatra22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moekatra22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moekatra22-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1479,unix/moekatra22-QEMU-Virtual-Machine:/tmp/.ICE-unix/1479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_LB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac3f3771_a05d_46bf_a24c_c037ed941efe'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_LB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NRIJM2'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_LB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ar_LB.UTF-8'), ('LC_IDENTIFICATION', 'ar_LB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_LB.UTF-8'), ('LC_PAPER', 'ar_LB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.075731] (cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target spawner\x1b[0m\n'}
+[0.080095] (cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target controller\x1b[0m\n'}
+[0.101208] (-) TimerEvent: {}
+[0.115967] (cpp_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/controller_node.cpp.o\x1b[0m\n'}
+[0.123578] (cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/spawner.dir/src/spawner_node.cpp.o\x1b[0m\n'}
+[0.201457] (-) TimerEvent: {}
+[0.301908] (-) TimerEvent: {}
+[0.402502] (-) TimerEvent: {}
+[0.505718] (-) TimerEvent: {}
+[0.606537] (-) TimerEvent: {}
+[0.709521] (-) TimerEvent: {}
+[0.809891] (-) TimerEvent: {}
+[0.910632] (-) TimerEvent: {}
+[1.011094] (-) TimerEvent: {}
+[1.111648] (-) TimerEvent: {}
+[1.212223] (-) TimerEvent: {}
+[1.312580] (-) TimerEvent: {}
+[1.413586] (-) TimerEvent: {}
+[1.514043] (-) TimerEvent: {}
+[1.615373] (-) TimerEvent: {}
+[1.717449] (-) TimerEvent: {}
+[1.817763] (-) TimerEvent: {}
+[1.918705] (-) TimerEvent: {}
+[2.021695] (-) TimerEvent: {}
+[2.122132] (-) TimerEvent: {}
+[2.227462] (-) TimerEvent: {}
+[2.329657] (-) TimerEvent: {}
+[2.432839] (-) TimerEvent: {}
+[2.534756] (-) TimerEvent: {}
+[2.638664] (-) TimerEvent: {}
+[2.739630] (-) TimerEvent: {}
+[2.845761] (-) TimerEvent: {}
+[2.950317] (-) TimerEvent: {}
+[3.052669] (-) TimerEvent: {}
+[3.154902] (-) TimerEvent: {}
+[3.255496] (-) TimerEvent: {}
+[3.356559] (-) TimerEvent: {}
+[3.458338] (-) TimerEvent: {}
+[3.560050] (-) TimerEvent: {}
+[3.661262] (-) TimerEvent: {}
+[3.762365] (-) TimerEvent: {}
+[3.862875] (-) TimerEvent: {}
+[3.963588] (-) TimerEvent: {}
+[4.064737] (-) TimerEvent: {}
+[4.165761] (-) TimerEvent: {}
+[4.266357] (-) TimerEvent: {}
+[4.366826] (-) TimerEvent: {}
+[4.467303] (-) TimerEvent: {}
+[4.568003] (-) TimerEvent: {}
+[4.669453] (-) TimerEvent: {}
+[4.769990] (-) TimerEvent: {}
+[4.870876] (-) TimerEvent: {}
+[4.971971] (-) TimerEvent: {}
+[5.072827] (-) TimerEvent: {}
+[5.174341] (-) TimerEvent: {}
+[5.276332] (-) TimerEvent: {}
+[5.377774] (-) TimerEvent: {}
+[5.478682] (-) TimerEvent: {}
+[5.579487] (-) TimerEvent: {}
+[5.681886] (-) TimerEvent: {}
+[5.782891] (-) TimerEvent: {}
+[5.886937] (-) TimerEvent: {}
+[5.989546] (-) TimerEvent: {}
+[6.092587] (-) TimerEvent: {}
+[6.193527] (-) TimerEvent: {}
+[6.294909] (-) TimerEvent: {}
+[6.395626] (-) TimerEvent: {}
+[6.496972] (-) TimerEvent: {}
+[6.598603] (-) TimerEvent: {}
+[6.699640] (-) TimerEvent: {}
+[6.800304] (-) TimerEvent: {}
+[6.901450] (-) TimerEvent: {}
+[7.002077] (-) TimerEvent: {}
+[7.103023] (-) TimerEvent: {}
+[7.204121] (-) TimerEvent: {}
+[7.304684] (-) TimerEvent: {}
+[7.405549] (-) TimerEvent: {}
+[7.506922] (-) TimerEvent: {}
+[7.608747] (-) TimerEvent: {}
+[7.709304] (-) TimerEvent: {}
+[7.809873] (-) TimerEvent: {}
+[7.910589] (-) TimerEvent: {}
+[8.011363] (-) TimerEvent: {}
+[8.112425] (-) TimerEvent: {}
+[8.213584] (-) TimerEvent: {}
+[8.314099] (-) TimerEvent: {}
+[8.415163] (-) TimerEvent: {}
+[8.515527] (-) TimerEvent: {}
+[8.615969] (-) TimerEvent: {}
+[8.717136] (-) TimerEvent: {}
+[8.817639] (-) TimerEvent: {}
+[8.918032] (-) TimerEvent: {}
+[9.018634] (-) TimerEvent: {}
+[9.120671] (-) TimerEvent: {}
+[9.222424] (-) TimerEvent: {}
+[9.323066] (-) TimerEvent: {}
+[9.423554] (-) TimerEvent: {}
+[9.524366] (-) TimerEvent: {}
+[9.625697] (-) TimerEvent: {}
+[9.726184] (-) TimerEvent: {}
+[9.826863] (-) TimerEvent: {}
+[9.930219] (-) TimerEvent: {}
+[10.031522] (-) TimerEvent: {}
+[10.132408] (-) TimerEvent: {}
+[10.233635] (-) TimerEvent: {}
+[10.334159] (-) TimerEvent: {}
+[10.357445] (cpp_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable spawner\x1b[0m\n'}
+[10.434299] (-) TimerEvent: {}
+[10.535139] (-) TimerEvent: {}
+[10.636933] (-) TimerEvent: {}
+[10.737843] (-) TimerEvent: {}
+[10.838154] (-) TimerEvent: {}
+[10.889733] (cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target spawner\n'}
+[10.938341] (-) TimerEvent: {}
+[11.038963] (-) TimerEvent: {}
+[11.139687] (-) TimerEvent: {}
+[11.240106] (-) TimerEvent: {}
+[11.340974] (-) TimerEvent: {}
+[11.441454] (-) TimerEvent: {}
+[11.543430] (-) TimerEvent: {}
+[11.643774] (-) TimerEvent: {}
+[11.744217] (-) TimerEvent: {}
+[11.845200] (-) TimerEvent: {}
+[11.946019] (-) TimerEvent: {}
+[12.046316] (-) TimerEvent: {}
+[12.146819] (-) TimerEvent: {}
+[12.247377] (-) TimerEvent: {}
+[12.348048] (-) TimerEvent: {}
+[12.448470] (-) TimerEvent: {}
+[12.549028] (-) TimerEvent: {}
+[12.650237] (-) TimerEvent: {}
+[12.751407] (-) TimerEvent: {}
+[12.852159] (-) TimerEvent: {}
+[12.952801] (-) TimerEvent: {}
+[13.053879] (-) TimerEvent: {}
+[13.154765] (-) TimerEvent: {}
+[13.255515] (-) TimerEvent: {}
+[13.356032] (-) TimerEvent: {}
+[13.456537] (-) TimerEvent: {}
+[13.557242] (-) TimerEvent: {}
+[13.658503] (-) TimerEvent: {}
+[13.759345] (-) TimerEvent: {}
+[13.860232] (-) TimerEvent: {}
+[13.961172] (-) TimerEvent: {}
+[14.062159] (-) TimerEvent: {}
+[14.166283] (-) TimerEvent: {}
+[14.268009] (-) TimerEvent: {}
+[14.368791] (-) TimerEvent: {}
+[14.469834] (-) TimerEvent: {}
+[14.570339] (-) TimerEvent: {}
+[14.671836] (-) TimerEvent: {}
+[14.772317] (-) TimerEvent: {}
+[14.872908] (-) TimerEvent: {}
+[14.973937] (-) TimerEvent: {}
+[15.074870] (-) TimerEvent: {}
+[15.175367] (-) TimerEvent: {}
+[15.276101] (-) TimerEvent: {}
+[15.376831] (-) TimerEvent: {}
+[15.477454] (-) TimerEvent: {}
+[15.577989] (-) TimerEvent: {}
+[15.678655] (-) TimerEvent: {}
+[15.779397] (-) TimerEvent: {}
+[15.880453] (-) TimerEvent: {}
+[15.981385] (-) TimerEvent: {}
+[16.081905] (-) TimerEvent: {}
+[16.183213] (-) TimerEvent: {}
+[16.283514] (-) TimerEvent: {}
+[16.383814] (-) TimerEvent: {}
+[16.484172] (-) TimerEvent: {}
+[16.584673] (-) TimerEvent: {}
+[16.685654] (-) TimerEvent: {}
+[16.786584] (-) TimerEvent: {}
+[16.887246] (-) TimerEvent: {}
+[16.988784] (-) TimerEvent: {}
+[17.089482] (-) TimerEvent: {}
+[17.190564] (-) TimerEvent: {}
+[17.292068] (-) TimerEvent: {}
+[17.393168] (-) TimerEvent: {}
+[17.497495] (-) TimerEvent: {}
+[17.600744] (-) TimerEvent: {}
+[17.701862] (-) TimerEvent: {}
+[17.802393] (-) TimerEvent: {}
+[17.903008] (-) TimerEvent: {}
+[18.004597] (-) TimerEvent: {}
+[18.105402] (-) TimerEvent: {}
+[18.205908] (-) TimerEvent: {}
+[18.306619] (-) TimerEvent: {}
+[18.374401] (cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable controller\x1b[0m\n'}
+[18.406720] (-) TimerEvent: {}
+[18.507034] (-) TimerEvent: {}
+[18.607537] (-) TimerEvent: {}
+[18.708144] (-) TimerEvent: {}
+[18.808430] (-) TimerEvent: {}
+[18.908880] (-) TimerEvent: {}
+[19.009311] (-) TimerEvent: {}
+[19.034144] (cpp_pkg) StdoutLine: {'line': b'[100%] Built target controller\n'}
+[19.046904] (cpp_pkg) CommandEnded: {'returncode': 0}
+[19.069979] (cpp_pkg) JobProgress: {'identifier': 'cpp_pkg', 'progress': 'install'}
+[19.084897] (cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg'], 'cwd': '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg', 'env': OrderedDict([('USER', 'moekatra22'), ('LC_TIME', 'ar_LB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/moekatra22'), ('OLDPWD', '/home/moekatra22/catch_them_all_turtlesim/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_LB.UTF-8'), ('SYSTEMD_EXEC_PID', '1503'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'moekatra22'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'moekatra22'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/moekatra22-QEMU-Virtual-Machine:@/tmp/.ICE-unix/1479,unix/moekatra22-QEMU-Virtual-Machine:/tmp/.ICE-unix/1479'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_LB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ac3f3771_a05d_46bf_a24c_c037ed941efe'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_LB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NRIJM2'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_LB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'ar_LB.UTF-8'), ('LC_IDENTIFICATION', 'ar_LB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/moekatra22/catch_them_all_turtlesim/build/cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/moekatra22/catch_them_all_turtlesim/install/py_pkg/lib/python3.10/site-packages:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_LB.UTF-8'), ('LC_PAPER', 'ar_LB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/moekatra22/catch_them_all_turtlesim/install/launch:/home/moekatra22/catch_them_all_turtlesim/install/turtle_interfaces:/home/moekatra22/catch_them_all_turtlesim/install/py_pkg:/opt/ros/humble')]), 'shell': False}
+[19.105540] (cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.105858] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/spawner\n'}
+[19.106047] (cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/spawner" to ""\n'}
+[19.106097] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/controller\n'}
+[19.109530] (-) TimerEvent: {}
+[19.112232] (cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/lib/cpp_pkg/controller" to ""\n'}
+[19.112859] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/package_run_dependencies/cpp_pkg\n'}
+[19.113476] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/parent_prefix_path/cpp_pkg\n'}
+[19.114221] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.sh\n'}
+[19.114737] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[19.115071] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/path.sh\n'}
+[19.115398] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/environment/path.dsv\n'}
+[19.115889] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.bash\n'}
+[19.116177] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.sh\n'}
+[19.116931] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.zsh\n'}
+[19.117198] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/local_setup.dsv\n'}
+[19.117745] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/package.dsv\n'}
+[19.117951] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/ament_index/resource_index/packages/cpp_pkg\n'}
+[19.118152] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig.cmake\n'}
+[19.118466] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/cmake/cpp_pkgConfig-version.cmake\n'}
+[19.118702] (cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/moekatra22/catch_them_all_turtlesim/install/cpp_pkg/share/cpp_pkg/package.xml\n'}
+[19.121519] (cpp_pkg) CommandEnded: {'returncode': 0}
+[19.172944] (cpp_pkg) JobEnded: {'identifier': 'cpp_pkg', 'rc': 0}
+[19.174213] (-) EventReactorShutdown: {}

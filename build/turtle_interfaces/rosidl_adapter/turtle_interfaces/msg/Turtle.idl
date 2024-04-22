@@ -8,9 +8,11 @@ module turtle_interfaces {
     struct Turtle {
       string name;
 
-      float pose_x;
+      double x;
 
-      float pose_y;
+      double y;
+
+      double theta;
     };
   };
 };
